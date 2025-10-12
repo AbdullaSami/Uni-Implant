@@ -9,5 +9,202 @@
         "features": "Certified. Profitable. Made in Turkey",
         "callToAction": "Learn More"
         }
+    },
+    "contactPage": {
+        "left": {
+            "title": "Contact Information",
+            "addressLine1": "Dudullu OSB Mahallesi İmes 501 Sk. E Blok No:25",
+            "addressLine2": "Ümraniye / İSTANBUL",
+            "headOfficeTitle": "Head Office",
+            "headOfficeCountry": "Saudi Arabia",
+            "emailTitle": "Email Us",
+            "emailAddress": "Oxciraa@gmail.com",
+            "phoneTitle": "Call Us",
+            "phoneNumber": "+966538127976"
+        },
+        "right": {
+            "title": "Send us an e-mail",
+            "placeholders": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "consent": {
+                "prefix": "I have read and understood the",
+                "personalData": "Personal Data Consent",
+                "and": "and",
+                "privacy": "Privacy and Data Protection Notice",
+                "suffix": "and I expressly accept the terms."
+            },
+            "submit": "Submit",
+            "status": {
+                "success": "Thank you! Your message has been sent.",
+                "error": "Failed to send message. Please try again later."
+            }
+        }
+    },
+    "navbar": {
+        "cta": "Contact Us",
+        "srOpenMenu": "Open main menu",
+        "links": {
+            "home": "Home",
+            "about": "About Us",
+            "products": "Products",
+            "downloads": "Downloads",
+            "contact": "Contact Us",
+            "kits": "Kits"
+        },
+        "products": {
+            "implants": {
+                "title": "Implants",
+                "items": {
+                    "uniconic": "Uni-Conic",
+                    "uniplus": "UNI-Plus",
+                    "unipiece": "UNI-piece"
+                }
+            },
+            "prosthetic": {
+                "title": "Prosthetic",
+                "items": {
+                    "cementable": "Cementable Solutions",
+                    "overdenture": "Overdenture Solutions",
+                    "multiunit": "Multi-Unit Solutions"
+                }
+            },
+            "digital": {
+                "title": "Digital Solutions",
+                "items": {
+                    "tibase": "Ti-Base Abutment",
+                    "multiunit_tibase": "Multi-Unit Ti-Base"
+                }
+            }
+        }
+    },
+    "footer": {
+        "about": {
+            "paragraph": "Since 2006, we have been serving dentists and patients across Turkey. In 2019, we launched the Uni Implant project with high European standards, built on 6 years of production experience and continuous development."
+        },
+        "usefulLinks": {
+            "title": "Useful Links",
+            "Uni-ImplantImplants": "Uni-Implant Implants",
+            "cementable": "Cementable Solutions",
+            "overdenture": "Overdenture Solutions",
+            "multiunit": "Multi - Unit Solutions",
+            "digital": "Digital Solutions",
+            "surgicalKits": "Surgical Kits",
+            "productionArea": "Production Area"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "location": "Location: Taiz - Sofitel Tour",
+            "email": "info@janat-abasaten.com",
+            "phone": "+967777953823"
+        },
+        "copyright": "Uni Implant ©2024 All rights reserved"
+    },
+    "aboutUsMainPage": {
+        "title": "About Us",
+        "historyTitle": "COMPANY HISTORY & OUR GOALS",
+        "historyParagraph": "Since 2006, we have been serving dentists and patients across Turkey. In 2019, we launched the Uni Implant project with high European standards, built on 6 years of production experience and continuous development.",
+        "vision": {
+            "title": "Our Vision & Mission",
+            "paragraph": "\"Life is Beautiful When You Smile\" We aim to bring innovative designs and advanced dental implant technologies to the global market — focusing on quality, comfort, and human-centered care."
+        },
+        "whyChoose": {
+            "title": "Why Choose Uni-Implant?",
+            "list": {
+                "item1": "High quality and innovative design",
+                "item2": "Certified to meet European standards",
+                "item3": "Trusted, safe, and precise medical products",
+                "item4": "Continuous development through advanced R&D",
+                "item5": "100% customer satisfaction is our priority"
+            }
+        },
+        "policy": {
+            "title": "Our Policy",
+            "list": {
+                "item1": "Consistent quality across all production stages",
+                "item2": "Strict hygiene and safety protocols",
+                "item3": "Ongoing updates with the latest technology",
+                "item4": "Multi-stage quality control for maximum reliability"
+            }
+        },
+        "conference": {
+            "title": "Scientific Conference",
+            "paragraph": "Uni Implant recently hosted a scientific conference attended by leading dentists to exchange ideas and explore the latest in dental implant innovations."
+        },
+        "buttons": {
+            "contact": "Contact Us",
+            "learnMore": "Learn More"
+        }
+    },
+    "catalogMainPage": {
+        "title": "Products Catalog",
+        "paragraph1": "You can obtain detailed information about our company and products by reviewing our catalog.",
+        "paragraph2": "All our product varieties and specifications are available in our catalog",
+        "button": "Show Catalog"
+    },
+    "usefulInfo": {
+        "sectionTitle": "Uni-Implant System",
+        "sectionSubtitle": "Useful Information",
+        "intro": "Dental implants offer a durable and aesthetic solution for missing teeth. They integrate with the jawbone for a permanent fit and can support restorations for a natural-looking smile. Additionally, they enhance functionality by allowing normal speech and chewing, and when placed by a qualified dentist, they have a high success rate.",
+        "cards": {
+            "durability": {
+                "title": "Durability",
+                "desc": "Dental implants are made from strong, biocompatible materials like titanium, designed to fuse with the jawbone and provide long-lasting, permanent support."
+            },
+            "aesthetics": {
+                "title": "Aesthetics",
+                "desc": "Dental implants are oral health products used to support dental prosthetics like crowns, bridges, and dentures, which can be customized to match the color and shape of a patient's natural teeth."
+            },
+            "functionality": {
+                "title": "Functionality",
+                "desc": "Dental implants can assist patients in regaining their natural speaking and chewing abilities, ultimately enhancing their overall quality of life and contributing positively to their self-confidence."
+            },
+            "safety": {
+                "title": "Safety",
+                "desc": "It has been demonstrated that the products manufactured by Uni-Implant are safe and effective with a high success rate when used by a qualified and experienced dentist."
+            }
+        }
+    },
+    "aboutPage": {
+        "hero": {
+            "title": "About Us",
+            "headline1": "High Efficiency and New",
+            "headline2": "Generation Technology"
+        },
+        "aboutCompany": {
+            "title": "About Company",
+            "paragraph": "Committed to a quality approach in the dental sector since 2006, we have been serving our distinguished dentists with various titles and patients from almost all parts of Turkey, which has been levelled up by 6 years of producing experience, and Uni Implant Project was brought into action with high standards within unique quality."
+        },
+        "discovery": {
+            "title": "Discover the Innovative Solutions from Uni Implant Dental Implant Systems",
+            "paragraph": "Join us as we showcase the cutting-edge products and services offered by Uni Dental Implant Systems. Our commitment to excellence and innovative approach sets us apart in the industry. From Implant Systems, to Prosthetic Solutions, our team is dedicated to providing unparalleled quality and customer satisfaction. Watch now to see how Uni Implant Dental Implant Systems is leading the way in Dental."
+        },
+        "whyUs": {
+            "title": "Why Uni-Implant Systems ?",
+            "p1": "As Uni Implant family, we have been working hard to provide our customers with the best products as we deeply believe that every patient has the right to get the highest quality under our innovative R&D studies in accordance with the European standards.",
+            "p2": "Uni Implant is known to have quality, sensitive and creative products in disposable medical device sector.",
+            "p3": "We are doing our best to meet our customers’ needs and expectations, to raise the standards of our patients and dentists with all our energy, ambition, determination, and experience ensuring absolute customer satisfaction."
+        }
+    },
+    "contactPageHero": {
+        "title": "Contact Us"
+    },
+    "downloadPage": {
+        "hero": {
+            "title": "Download"
+        },
+        "items": {
+            "ecatalog": "E-Catalog",
+            "digitalLibrary": "Digital Library",
+            "ifu": "IFU",
+            "certificates": "Certificates",
+            "articles": "Articles",
+            "theses": "Master & PhD Theses",
+            "videos": "Videos",
+            "pressKit": "Press Kit",
+            "faq": "FAQ"
+        }
     }
 }

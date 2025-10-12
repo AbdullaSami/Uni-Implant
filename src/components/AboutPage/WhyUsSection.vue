@@ -15,20 +15,13 @@
         <div class="hidden md:block md:w-full md:h-[520px] w-full h-auto max-w-full absolute inset-0 rounded-3xl bg-gradient-to-r from-black/70 to-black/10 pointer-events-none"></div>
 
         <div class="relative z-10 px-2 sm:px-4 md:px-8 py-6 md:py-10 md:m-12 w-full">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-black md:text-white">Why Uni-Implant Systems ?</h2>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-black md:text-white">{{$t('aboutPage.whyUs.title')}}</h2>
           <p class="text-sm sm:text-base md:text-base py-4 md:py-8 w-full md:w-4/5 leading-6 md:leading-8 text-gray-800 md:text-white">
-            As Uni Implant family, we have been working hard to provide our customers with
-            the best products as we deeply believe that every patient has the right to get
-            the highest quality under our innovative R&D studies in accordance with the
-            European standards.
+            {{$t('aboutPage.whyUs.p1')}}
             <span class="block my-4">
-              Uni Implant is known to have quality, sensitive and creative
-              products in disposable medical device sector.
+              {{$t('aboutPage.whyUs.p2')}}
             </span>
-            We are doing our best to meet our
-            customers’ needs and expectations, to raise the standards of our patients and
-            dentists with all our energy, ambition, determination, and experience ensuring
-            absolute customer satisfaction.
+            {{$t('aboutPage.whyUs.p3')}}
           </p>
         </div>
       </div>

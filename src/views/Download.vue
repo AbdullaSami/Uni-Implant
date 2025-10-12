@@ -7,7 +7,7 @@
       <div class="flex justify-start items-center container mx-auto px-6 md:px-28 text-start">
         <span class="bg-[#C70A0C] h-[100px] md:h-[70px] w-[4px] md:w-[6px] rounded-md"></span>
         <div class="ml-6 md:ml-8">
-          <h2 class="text-3xl font-semibold text-[#fff]">Download</h2>
+          <h2 class="text-3xl font-semibold text-[#fff]">{{$t('downloadPage.hero.title')}}</h2>
         </div>
       </div>
     </section>
@@ -20,7 +20,7 @@
         class="flex flex-col items-center text-center"
       >
         <img :src="item.src" :alt="item.label" class="w-32 sm:w-40 md:w-56 h-auto mb-3 md:mb-4 cursor-pointer" />
-        <p class="text-base font-semibold">{{ item.label }}</p>
+        <p class="text-base font-semibold">{{$t(item.label)}}</p>
       </div>
     </div>
   </div>
@@ -38,15 +38,15 @@ import PressKit from '@/assets/download/Press Kit.png'
 import Videos from '@/assets/download/Videos.png'
 
 const items = [
-  { src: ECatalog, label: 'E-Catalog' },
-  { src: DigitalLibrary, label: 'Digital Library' },
-  { src: IFU, label: 'IFU' },
-  { src: Certificates, label: 'Certificates' },
-  { src: Articles, label: 'Articles' },
-  { src: MasterPhDTheses, label: 'Master & PhD Theses' },
-  { src: Videos, label: 'Videos' },
-  { src: PressKit, label: 'Press Kit' },
-  { src: FAQ, label: 'FAQ' },
+  { src: ECatalog, label: 'downloadPage.items.ecatalog' },
+  { src: DigitalLibrary, label: 'downloadPage.items.digitalLibrary' },
+  { src: IFU, label: 'downloadPage.items.ifu' },
+  { src: Certificates, label: 'downloadPage.items.certificates' },
+  { src: Articles, label: 'downloadPage.items.articles' },
+  { src: MasterPhDTheses, label: 'downloadPage.items.theses' },
+  { src: Videos, label: 'downloadPage.items.videos' },
+  { src: PressKit, label: 'downloadPage.items.pressKit' },
+  { src: FAQ, label: 'downloadPage.items.faq' },
 ]
 
 </script>

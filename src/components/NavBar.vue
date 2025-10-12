@@ -18,7 +18,7 @@
           type="button"
           class="text-white bg-transparent hover:bg-white hover:text-zinc-900 focus:ring-4 focus:outline-none focus:ring-zinc-300 font-medium rounded-2xl border hover:ring-3 hover:ring-salt-200 transition-colors duration-300 text-sm px-4 py-2 text-center md:w-44"
         >
-          Contact Us
+          {{$t('navbar.cta')}}
         </router-link>
         <button
           data-collapse-toggle="navbar-sticky"
@@ -27,7 +27,7 @@
           aria-controls="navbar-sticky"
           aria-expanded="false"
         >
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">{{$t('navbar.srOpenMenu')}}</span>
           <svg
             class="w-5 h-5 text-white"
             aria-hidden="true"
@@ -57,7 +57,7 @@
               :to="{ name: 'app.home', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              Home
+              {{$t('navbar.links.home')}}
             </router-link>
           </li>
           <li>
@@ -65,7 +65,7 @@
               :to="{ name: 'app.about', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              About Us
+              {{$t('navbar.links.about')}}
             </router-link>
           </li>
 <li>
@@ -74,7 +74,7 @@
     data-dropdown-toggle="dropdownNavbar"
     class="flex items-center justify-between w-full py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
   >
-    Products
+    {{$t('navbar.links.products')}}
     <svg
       class="w-2.5 h-2.5 ms-2.5"
       aria-hidden="true"
@@ -108,16 +108,16 @@
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-          Implants
+          {{$t('navbar.products.implants.title')}}
           <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
         <div id="submenuImplants" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-48 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Uni-Conic</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">UNI-Plus</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">UNI-piece</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniconic')}}</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniplus')}}</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.unipiece')}}</a></li>
           </ul>
         </div>
       </li>
@@ -131,16 +131,16 @@
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-          Prosthetic
+          {{$t('navbar.products.prosthetic.title')}}
           <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
         <div id="submenuProsthetic" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Cementable Solutions</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Overdenture Solutions</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Multi-Unit Solutions</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.cementable')}}</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.overdenture')}}</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.multiunit')}}</a></li>
           </ul>
         </div>
       </li>
@@ -154,22 +154,22 @@
           type="button"
           class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
         >
-          Digital Solutions
+          {{$t('navbar.products.digital.title')}}
           <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
         <div id="submenuDigital" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Ti-Base Abutment</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Multi-Unit Ti-Base</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.digital.items.tibase')}}</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.digital.items.multiunit_tibase')}}</a></li>
           </ul>
         </div>
       </li>
 
       <!-- Kits -->
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Kits</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.links.kits')}}</a>
       </li>
 
     </ul>
@@ -181,7 +181,7 @@
               :to="{ name: 'app.download', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              Downloads
+              {{$t('navbar.links.downloads')}}
             </router-link>
           </li>
           <li>
@@ -189,7 +189,7 @@
               :to="{ name: 'app.contact-us', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              Contact Us
+              {{$t('navbar.links.contact')}}
             </router-link>
           </li>
         </ul>

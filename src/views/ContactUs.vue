@@ -14,7 +14,7 @@ import ContactForm from "@/components/ContactForm.vue";
           class="bg-[#C70A0C] h-[100px] md:h-[70px] w-[4px] md:w-[6px] rounded-md"
         ></span>
         <div class="ml-6 md:ml-8">
-          <h2 class="text-2xl md:text-3xl font-semibold text-[#fff]">Contact Us</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold text-[#fff]">{{$t('contactPageHero.title')}}</h2>
         </div>
       </div>
     </section>

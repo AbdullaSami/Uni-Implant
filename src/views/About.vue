@@ -13,10 +13,10 @@ import DiscoverySection from "@/components/AboutPage/DiscoverySection.vue";
       <div class="flex justify-start container mx-auto px-6 md:px-28 text-start">
         <span class="bg-[#C70A0C] h-[100px] md:h-[170px] w-[4px] md:w-[6px] rounded-md"></span>
         <div class="ml-6 md:ml-12">
-          <h2 class="text-2xl font-semibold text-[#C70A0C]">About Us</h2>
+          <h2 class="text-2xl font-semibold text-[#C70A0C]">{{$t('aboutPage.hero.title')}}</h2>
           <p class="md:text-6xl text-3xl py-4 font-semibold">
-            High Efficiency and New <br />
-            <span class="block mt-4">Generation Technology</span>
+            {{$t('aboutPage.hero.headline1')}} <br />
+            <span class="block mt-4">{{$t('aboutPage.hero.headline2')}}</span>
           </p>
         </div>
       </div>

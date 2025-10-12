@@ -3,16 +3,13 @@
     <div class="flex flex-col w-full md:w-1/2">
       <img src="@/assets/about/discoverSectionBG.png" class="hidden md:block absolute w-[700px] right-4 top-1/2 -translate-y-1/2 z-10" alt="">
       <img src="@/assets/about/videoImage.png" class="relative md:absolute w-[650px] md:-right-4 md:top-1/2 md:-translate-y-1/2 z-10" alt="">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl py-2 md:py-4 font-semibold">Discover the Innovative Solutions from Uni Implant Dental Implant Systems</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl py-2 md:py-4 font-semibold">{{$t('aboutPage.discovery.title')}}</h2>
       <p class="text-sm sm:text-base md:text-base py-2 md:py-4">
-        Join us as we showcase the cutting-edge products and services offered by Uni
-        Dental Implant Systems. Our commitment to excellence and innovative approach sets
-        us apart in the industry. From Implant Systems, to Prosthetic Solutions, our team
-        is dedicated to providing unparalleled quality and customer satisfaction. Watch
-        now to see how Uni Implant Dental Implant Systems is leading the way in Dental.
+        {{$t('aboutPage.discovery.paragraph')}}
       </p>
     </div>
   </div>
 </template>
 
 <style scoped></style>
+

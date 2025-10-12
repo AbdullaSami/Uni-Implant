@@ -28,7 +28,7 @@
         :to="{ name: 'app.products' }"
         class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
-        Learn More
+        {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="pl-2 h-7"
@@ -68,7 +68,7 @@
         :to="{ name: 'app.products' }"
         class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
-        Learn More
+        {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="pl-2 h-7"
@@ -108,7 +108,7 @@
         :to="{ name: 'app.products' }"
         class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
-        Learn More
+        {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="pl-2 h-7"
@@ -148,7 +148,7 @@
         :to="{ name: 'app.products' }"
         class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
-        Learn More
+        {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="pl-2 h-7"
