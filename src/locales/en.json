@@ -1,0 +1,13 @@
+{ 
+    "welcome": "hellos", "hello_user": "Hello, {name}!",
+    "homePage": {
+        "heroSection": {
+        "title": "High Quality",
+        "description": "This is the best place to find quality products.",
+        "slogan1": "The Ultimate Unity",
+        "slogan2": "in Dental Implants",
+        "features": "Certified. Profitable. Made in Turkey",
+        "callToAction": "Learn More"
+        }
+    }
+}
