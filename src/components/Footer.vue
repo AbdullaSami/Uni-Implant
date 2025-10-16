@@ -4,7 +4,7 @@
   <!-- Footer -->
   <footer
     id="footerEN"
-    class="relative text-center lg:text-left text-black bg-gradient-to-r from-gray-300 to-gray-100"
+    class="relative lg:text-left text-black bg-gradient-to-r from-gray-300 to-gray-100"
   >
     <!-- Section: Links -->
     <section class="pt-10 px-8 lg:px-24 relative z-10">
@@ -45,7 +45,7 @@
           <!-- Column 3: Contact -->
           <div class="mt-4">
             <h4
-              class="font-semibold mb-4 text-lg uppercase tracking-wide relative inline-block"
+              class=" font-semibold mb-4 text-lg uppercase tracking-wide relative inline-block"
             >
               {{$t('footer.contact.title')}}
               <span
