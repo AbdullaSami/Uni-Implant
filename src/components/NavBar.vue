@@ -13,13 +13,13 @@
         <img src="@/assets/logo.png" class="h-10" alt="Logo" />
       </router-link>
       <div class="flex md:order-2 space-x-3 md:space-x-0">
-        <router-link
-          :to="{ name: 'app.contact-us', hash: '#main' }"
-          type="button"
+        <select
+          v-model="locale"
           class="text-white bg-transparent hover:bg-white hover:text-zinc-900 focus:ring-4 focus:outline-none focus:ring-zinc-300 font-medium rounded-2xl border hover:ring-3 hover:ring-salt-200 transition-colors duration-300 text-sm px-4 py-2 text-center md:w-44"
         >
-          {{$t('navbar.cta')}}
-        </router-link>
+          <option value="en">EN</option>
+          <option value="tr">TR</option>
+        </select>
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
@@ -115,6 +115,7 @@
         </button>
         <div id="submenuImplants" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-48 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uni-implants')}}</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniconic')}}</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniplus')}}</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.unipiece')}}</a></li>
@@ -200,8 +201,10 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useI18n } from 'vue-i18n';
 
 const isScrolled = ref(false);
+const { locale } = useI18n();
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;

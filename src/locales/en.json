@@ -58,6 +58,7 @@
             "implants": {
                 "title": "Implants",
                 "items": {
+                    "uni-implants": "Uni-Implants",
                     "uniconic": "Uni-Conic",
                     "uniplus": "UNI-Plus",
                     "unipiece": "UNI-piece"

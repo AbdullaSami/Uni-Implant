@@ -26,7 +26,7 @@
     >
       <router-link
         :to="{ name: 'app.products' }"
-        class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
+        class="flex justify-center items-center w-48 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
         {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
@@ -66,7 +66,7 @@
     >
       <router-link
         :to="{ name: 'app.products' }"
-        class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
+        class="flex justify-center items-center w-48 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
         {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
@@ -106,7 +106,7 @@
     >
       <router-link
         :to="{ name: 'app.products' }"
-        class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
+        class="flex justify-center items-center w-48 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
         {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg
@@ -146,7 +146,7 @@
     >
       <router-link
         :to="{ name: 'app.products' }"
-        class="flex justify-center items-center w-44 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
+        class="flex justify-center items-center w-48 bg-[#C70A0C] text-white text-base px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-[#C70A0C] transition-colors duration-300"
       >
         {{$t('aboutUsMainPage.buttons.learnMore')}}
         <svg

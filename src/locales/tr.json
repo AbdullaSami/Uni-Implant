@@ -1,1 +1,209 @@
-{ "welcome": "Hoş Geldiniz", "hello_user": "Merhaba, {name}!" }
+{ 
+  "homePage": {
+    "heroSection": {
+      "title": "Yüksek Kalite",
+      "description": "Kaliteli ürünleri bulmak için en iyi yer.",
+      "slogan1": "Mükemmel Birlik",
+      "slogan2": "Diş İmplantlarında",
+      "features": "Sertifikalı. Karlı. Türkiye'de Üretilmiştir",
+      "callToAction": "Daha Fazla Bilgi"
+    }
+  },
+  "contactPage": {
+    "left": {
+      "title": "İletişim Bilgileri",
+      "addressLine1": "Dudullu OSB Mahallesi İmes 501 Sk. E Blok No:25",
+      "addressLine2": "Ümraniye / İSTANBUL",
+      "headOfficeTitle": "Merkez Ofis",
+      "headOfficeCountry": "Suudi Arabistan",
+      "emailTitle": "Bize E-posta Gönderin",
+      "emailAddress": "Oxciraa@gmail.com",
+      "phoneTitle": "Bizi Arayın",
+      "phoneNumber": "+966538127976"
+    },
+    "right": {
+      "title": "Bize e-posta gönderin",
+      "placeholders": {
+        "name": "Ad",
+        "email": "E-posta",
+        "message": "Mesaj"
+      },
+      "consent": {
+        "prefix": "Şunları okudum ve anladım:",
+        "personalData": "Kişisel Veri Onayı",
+        "and": "ve",
+        "privacy": "Gizlilik ve Veri Koruma Bildirimi",
+        "suffix": "ve şartları açıkça kabul ediyorum."
+      },
+      "submit": "Gönder",
+      "status": {
+        "success": "Teşekkürler! Mesajınız gönderildi.",
+        "error": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin."
+      }
+    }
+  },
+  "navbar": {
+    "cta": "Bize Ulaşın",
+    "srOpenMenu": "Ana menüyü aç",
+    "links": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "products": "Ürünler",
+      "downloads": "İndirilenler",
+      "contact": "İletişim",
+      "kits": "Kitler"
+    },
+    "products": {
+      "implants": {
+        "title": "İmplantlar",
+        "items": {
+          "uniconic": "Uni-Conic",
+          "uniplus": "UNI-Plus",
+          "unipiece": "UNI-piece"
+        }
+      },
+      "prosthetic": {
+        "title": "Protetik",
+        "items": {
+          "cementable": "Simante Çözümler",
+          "overdenture": "Overdenture Çözümleri",
+          "multiunit": "Multi-Unit Çözümleri"
+        }
+      },
+      "digital": {
+        "title": "Dijital Çözümler",
+        "items": {
+          "tibase": "Ti-Base Abutment",
+          "multiunit_tibase": "Multi-Unit Ti-Base"
+        }
+      }
+    }
+  },
+  "footer": {
+    "about": {
+      "paragraph": "2006'dan beri Türkiye genelinde diş hekimlerine ve hastalara hizmet veriyoruz. 2019 yılında, 6 yıllık üretim tecrübesi ve sürekli gelişim üzerine yüksek Avrupa standartlarında Uni Implant projesini hayata geçirdik."
+    },
+    "usefulLinks": {
+      "title": "Faydalı Bağlantılar",
+      "Uni-ImplantImplants": "Uni-Implant İmplantlar",
+      "cementable": "Simante Çözümler",
+      "overdenture": "Overdenture Çözümleri",
+      "multiunit": "Multi-Unit Çözümleri",
+      "digital": "Dijital Çözümler",
+      "surgicalKits": "Cerrahi Kitler",
+      "productionArea": "Üretim Alanı"
+    },
+    "contact": {
+      "title": "Bize Ulaşın",
+      "location": "Konum: Taiz - Sofitel Turu",
+      "email": "info@janat-abasaten.com",
+      "phone": "+967777953823"
+    },
+    "copyright": "Uni Implant ©2024 Tüm hakları saklıdır"
+  },
+  "aboutUsMainPage": {
+    "title": "Hakkımızda",
+    "historyTitle": "ŞİRKET TARİHÇESİ VE HEDEFLERİMİZ",
+    "historyParagraph": "2006'dan beri Türkiye genelinde diş hekimlerine ve hastalara hizmet veriyoruz. 2019 yılında, 6 yıllık üretim tecrübesi ve sürekli gelişim üzerine yüksek Avrupa standartlarında Uni Implant projesini hayata geçirdik.",
+    "vision": {
+      "title": "Vizyonumuz ve Misyonumuz",
+      "paragraph": "'Gülümsediğinde Hayat Güzeldir' — Kaliteye, konfora ve insana odaklanarak yenilikçi tasarımlar ve ileri diş implant teknolojilerini dünya pazarına sunmayı amaçlıyoruz."
+    },
+    "whyChoose": {
+      "title": "Neden Uni-Implant?",
+      "list": {
+        "item1": "Yüksek kalite ve yenilikçi tasarım",
+        "item2": "Avrupa standartlarına uygun sertifikalar",
+        "item3": "Güvenilir, güvenli ve hassas tıbbi ürünler",
+        "item4": "Gelişmiş Ar-Ge ile sürekli gelişim",
+        "item5": "%100 müşteri memnuniyeti önceliğimizdir"
+      }
+    },
+    "policy": {
+      "title": "Politikamız",
+      "list": {
+        "item1": "Üretimin tüm aşamalarında tutarlı kalite",
+        "item2": "Sıkı hijyen ve güvenlik protokolleri",
+        "item3": "En yeni teknolojiyle sürekli güncelleme",
+        "item4": "Maksimum güvenilirlik için çok aşamalı kalite kontrol"
+      }
+    },
+    "conference": {
+      "title": "Bilimsel Konferans",
+      "paragraph": "Uni Implant yakın zamanda önde gelen diş hekimlerinin katıldığı, fikir alışverişinde bulunulan ve diş implantlarındaki en yeni gelişmelerin ele alındığı bilimsel bir konferansa ev sahipliği yaptı."
+    },
+    "buttons": {
+      "contact": "Bize Ulaşın",
+      "learnMore": "Daha Fazla Bilgi"
+    }
+  },
+  "catalogMainPage": {
+    "title": "Ürün Kataloğu",
+    "paragraph1": "Kataloğumuzu inceleyerek şirketimiz ve ürünlerimiz hakkında detaylı bilgi edinebilirsiniz.",
+    "paragraph2": "Tüm ürün çeşitlerimiz ve özelliklerimiz kataloğumuzda mevcuttur.",
+    "button": "Kataloğu Göster"
+  },
+  "usefulInfo": {
+    "sectionTitle": "Uni-Implant Sistemi",
+    "sectionSubtitle": "Faydalı Bilgiler",
+    "intro": "Diş implantları, eksik dişler için dayanıklı ve estetik bir çözüm sunar. Çene kemiğiyle bütünleşerek kalıcı bir uyum sağlar ve doğal görünümlü bir gülüş için restorasyonları destekler. Ayrıca, normal konuşma ve çiğnemeye olanak tanıyarak fonksiyonelliği artırır ve nitelikli bir diş hekimi tarafından uygulandığında yüksek başarı oranına sahiptir.",
+    "cards": {
+      "durability": {
+        "title": "Dayanıklılık",
+        "desc": "Diş implantları, titanyum gibi güçlü ve biyouyumlu malzemelerden üretilir; çene kemiğiyle kaynaşacak şekilde tasarlanmıştır ve uzun ömürlü, kalıcı destek sağlar."
+      },
+      "aesthetics": {
+        "title": "Estetik",
+        "desc": "Diş implantları; kuron, köprü ve protez gibi diş protezlerini desteklemek için kullanılan ağız sağlığı ürünleridir ve hastanın doğal dişlerinin renk ve şekline uyacak şekilde özelleştirilebilir."
+      },
+      "functionality": {
+        "title": "Fonksiyonalite",
+        "desc": "Diş implantları, hastaların doğal konuşma ve çiğneme yetilerini yeniden kazanmasına yardımcı olabilir; bu da yaşam kalitesini artırır ve özgüvene olumlu katkı sağlar."
+      },
+      "safety": {
+        "title": "Güvenlik",
+        "desc": "Uni-Implant tarafından üretilen ürünlerin, yetkin ve deneyimli bir diş hekimi tarafından kullanıldığında yüksek başarı oranıyla güvenli ve etkili olduğu kanıtlanmıştır."
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Hakkımızda",
+      "headline1": "Yüksek Verimlilik ve Yeni",
+      "headline2": "Nesil Teknoloji"
+    },
+    "aboutCompany": {
+      "title": "Şirket Hakkında",
+      "paragraph": "2006'dan beri diş hekimliği sektöründe kalite odaklı bir yaklaşımla hareket ediyoruz; Türkiye'nin neredeyse her bölgesinden seçkin diş hekimlerine ve hastalara hizmet veriyoruz. 6 yıllık üretim tecrübemizle seviyeyi yükselterek Uni Implant Projesi'ni benzersiz kalite ve yüksek standartlarla hayata geçirdik."
+    },
+    "discovery": {
+      "title": "Uni Implant Diş İmplant Sistemlerinin Yenilikçi Çözümlerini Keşfedin",
+      "paragraph": "Uni Dental İmplant Sistemleri'nin sunduğu en son ürün ve hizmetleri keşfedin. Mükemmellik anlayışımız ve yenilikçi yaklaşımımız sektörde bizi öne çıkarıyor. İmplant Sistemlerinden Protetik Çözümlere kadar ekibimiz, benzersiz kalite ve müşteri memnuniyeti sunmaya adanmıştır. Uni Implant Diş İmplant Sistemlerinin diş hekimliğinde nasıl öncülük ettiğini şimdi izleyin."
+    },
+    "whyUs": {
+      "title": "Neden Uni-Implant Sistemleri?",
+      "p1": "Uni Implant ailesi olarak, her hastanın Avrupa standartlarına uygun yenilikçi Ar-Ge çalışmalarımızla en yüksek kaliteyi hak ettiğine derinden inanıyoruz ve müşterilerimize en iyi ürünleri sunmak için çalışıyoruz.",
+      "p2": "Uni Implant, tek kullanımlık tıbbi cihaz sektöründe kaliteli, hassas ve yaratıcı ürünleriyle tanınır.",
+      "p3": "Müşterilerimizin ihtiyaç ve beklentilerini karşılamak, hastalarımızın ve diş hekimlerimizin standartlarını enerji, azim, kararlılık ve deneyimimizle yükseltmek ve kesin müşteri memnuniyeti sağlamak için elimizden gelenin en iyisini yapıyoruz."
+    }
+  },
+  "contactPageHero": {
+    "title": "Bize Ulaşın"
+  },
+  "downloadPage": {
+    "hero": {
+      "title": "İndir"
+    },
+    "items": {
+      "ecatalog": "E-Katalog",
+      "digitalLibrary": "Dijital Kütüphane",
+      "ifu": "IFU",
+      "certificates": "Sertifikalar",
+      "articles": "Makaleler",
+      "theses": "Yüksek Lisans ve Doktora Tezleri",
+      "videos": "Videolar",
+      "pressKit": "Basın Kiti",
+      "faq": "SSS"
+    }
+  }
+}
