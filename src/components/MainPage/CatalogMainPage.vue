@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto md:h-[80%] grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-0">
+  <div class="h-auto md:h-[80%] grid grid-cols-1 md:grid-cols-2 md:gap-8 px-4 md:px-0">
 
     <!-- Left side (Image) -->
     <div class="flex justify-center items-center py-10 md:py-16">
@@ -10,8 +10,10 @@
     </div>
 
     <!-- Right side (Text content) -->
-    <div class="flex flex-col justify-center items-center pt-8 md:pt-16 pb-16 md:pb-32">
-      <div class="h-full flex flex-col justify-center items-center m-4 p-6 md:p-12 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 shadow-md text-center">
+    <div class="flex flex-col justify-center items-center md:pt-16 pb-16 md:pb-32 ">
+      <div class="h-full flex flex-col justify-center items-center m-4 p-6 md:p-12 rounded-2xl 
+      bg-[url(@/assets/catalogTextBG.png)] bg-cover bg-center bg-no-repeat
+       shadow-md text-center">
         <h2 class="text-2xl md:text-4xl font-bold mb-4 text-gray-900">{{$t('catalogMainPage.title')}}</h2>
         <p class="mb-6 px-4 md:px-16 text-gray-700">
           {{$t('catalogMainPage.paragraph1')}} 

@@ -115,7 +115,7 @@
         </button>
         <div id="submenuImplants" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-48 dark:bg-gray-700">
           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uni-implants')}}</a></li>
+            <li><router-link :to="{ name: 'app.products' }" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uni-implants')}}</router-link></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniconic')}}</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniplus')}}</a></li>
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.unipiece')}}</a></li>
