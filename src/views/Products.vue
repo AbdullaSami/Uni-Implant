@@ -23,7 +23,7 @@ import uniPremium from '@/assets/products/implants/cover/uni-piece-cover.png';
       </div>
     </section>
 
-    <div class="grid grid-cols-3 gap-8 my-48 px-16 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 my-12 md:my-48 px-4 md:px-16 ">
       <ProductCard 
       title="UNI-Conic" 
       :image="uniConic" 
