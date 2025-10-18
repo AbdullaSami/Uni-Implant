@@ -8,9 +8,24 @@
     <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
       <router-link
         :to="{ name: 'app.home', hash: '#main' }"
-        class="flex items-center space-x-3"
+        class="flex items-center"
       >
-        <img src="@/assets/logo.png" class="h-10" alt="Logo" />
+        <img
+          src="@/assets/logo.png"
+          :class="[
+            'transition-all duration-500 h-10',
+            isScrolled ? 'hidden' : 'block',
+          ]"
+          alt="Logo"
+        />
+        <img
+          src="@/assets/logo-white.png"
+          :class="[
+            'transition-all duration-500 h-10',
+            isScrolled ? 'block' : 'hidden',
+          ]"
+          alt="Logo"
+        />
       </router-link>
       <div class="flex md:order-2 space-x-3 md:space-x-0">
         <select
@@ -26,7 +41,7 @@
           @click="isMobileMenuOpen = true"
           :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
         >
-          <span class="sr-only">{{$t('navbar.srOpenMenu')}}</span>
+          <span class="sr-only">{{ $t("navbar.srOpenMenu") }}</span>
           <svg
             class="w-5 h-5 text-white"
             aria-hidden="true"
@@ -56,7 +71,7 @@
               :to="{ name: 'app.home', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              {{$t('navbar.links.home')}}
+              {{ $t("navbar.links.home") }}
             </router-link>
           </li>
           <li>
@@ -64,124 +79,224 @@
               :to="{ name: 'app.about', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              {{$t('navbar.links.about')}}
+              {{ $t("navbar.links.about") }}
             </router-link>
           </li>
-<li>
-  <button
-    id="dropdownNavbarLink"
-    data-dropdown-toggle="dropdownNavbar"
-    class="flex items-center justify-between w-full py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
-  >
-    {{$t('navbar.links.products')}}
-    <svg
-      class="w-2.5 h-2.5 ms-2.5"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 10 6"
-    >
-      <path
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="m1 1 4 4 4-4"
-      />
-    </svg>
-  </button>
+          <li>
+            <button
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
+            >
+              {{ $t("navbar.links.products") }}
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
 
-  <!-- Main Dropdown -->
-  <div
-    id="dropdownNavbar"
-    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700 dark:divide-gray-600"
-  >
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-      
-      <!-- Implants -->
-      <li>
-        <button
-          id="dropdownImplants"
-          data-dropdown-toggle="submenuImplants"
-          data-dropdown-placement="right-start"
-          type="button"
-          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          {{$t('navbar.products.implants.title')}}
-          <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg>
-        </button>
-        <div id="submenuImplants" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-48 dark:bg-gray-700">
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><router-link :to="{ name: 'app.products' }" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uni-implants')}}</router-link></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniconic')}}</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.uniplus')}}</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.implants.items.unipiece')}}</a></li>
-          </ul>
-        </div>
-      </li>
+            <!-- Main Dropdown -->
+            <div
+              id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700 dark:divide-gray-600"
+            >
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                <!-- Implants -->
+                <li>
+                  <button
+                    id="dropdownImplants"
+                    data-dropdown-toggle="submenuImplants"
+                    data-dropdown-placement="right-start"
+                    type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >
+                    {{ $t("navbar.products.implants.title") }}
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="submenuImplants"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-48 dark:bg-gray-700"
+                  >
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <li>
+                        <router-link
+                          :to="{ name: 'app.products' }"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{
+                            $t("navbar.products.implants.items.uni-implants")
+                          }}</router-link
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.implants.items.uniconic") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.implants.items.uniplus") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.implants.items.unipiece") }}</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
 
-      <!-- Prosthetic -->
-      <li>
-        <button
-          id="dropdownProsthetic"
-          data-dropdown-toggle="submenuProsthetic"
-          data-dropdown-placement="right-start"
-          type="button"
-          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          {{$t('navbar.products.prosthetic.title')}}
-          <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg>
-        </button>
-        <div id="submenuProsthetic" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700">
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.cementable')}}</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.overdenture')}}</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.prosthetic.items.multiunit')}}</a></li>
-          </ul>
-        </div>
-      </li>
+                <!-- Prosthetic -->
+                <li>
+                  <button
+                    id="dropdownProsthetic"
+                    data-dropdown-toggle="submenuProsthetic"
+                    data-dropdown-placement="right-start"
+                    type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >
+                    {{ $t("navbar.products.prosthetic.title") }}
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="submenuProsthetic"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700"
+                  >
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.prosthetic.items.cementable") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.prosthetic.items.overdenture") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.prosthetic.items.multiunit") }}</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
 
-      <!-- Digital Solutions -->
-      <li>
-        <button
-          id="dropdownDigital"
-          data-dropdown-toggle="submenuDigital"
-          data-dropdown-placement="right-start"
-          type="button"
-          class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-        >
-          {{$t('navbar.products.digital.title')}}
-          <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-          </svg>
-        </button>
-        <div id="submenuDigital" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700">
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.digital.items.tibase')}}</a></li>
-            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.products.digital.items.multiunit_tibase')}}</a></li>
-          </ul>
-        </div>
-      </li>
+                <!-- Digital Solutions -->
+                <li>
+                  <button
+                    id="dropdownDigital"
+                    data-dropdown-toggle="submenuDigital"
+                    data-dropdown-placement="right-start"
+                    type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >
+                    {{ $t("navbar.products.digital.title") }}
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="submenuDigital"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-56 dark:bg-gray-700"
+                  >
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.digital.items.tibase") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.digital.items.multiunit_tibase") }}</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
 
-      <!-- Kits -->
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">{{$t('navbar.links.kits')}}</a>
-      </li>
-
-    </ul>
-  </div>
-</li>
+                <!-- Kits -->
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                    >{{ $t("navbar.links.kits") }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
 
           <li>
             <router-link
               :to="{ name: 'app.download', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              {{$t('navbar.links.downloads')}}
+              {{ $t("navbar.links.downloads") }}
             </router-link>
           </li>
           <li>
@@ -189,12 +304,12 @@
               :to="{ name: 'app.contact-us', hash: '#main' }"
               class="block py-2 px-3 md:text-zinc-200 md:hover:text-white transition-colors duration-300 rounded-sm hover:bg-slate-400 md:hover:bg-transparent md:p-0"
             >
-              {{$t('navbar.links.contact')}}
+              {{ $t("navbar.links.contact") }}
             </router-link>
           </li>
         </ul>
       </div>
-      
+
       <transition name="fade">
         <div
           v-if="isMobileMenuOpen"
@@ -206,8 +321,14 @@
             <div
               class="absolute left-0 top-0 h-full w-80 max-w-[85%] bg-white dark:bg-gray-800 shadow-xl overflow-y-auto"
             >
-              <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-700">
-                <router-link :to="{ name: 'app.home', hash: '#main' }" class="flex items-center space-x-3" @click="closeMobileMenu">
+              <div
+                class="flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-700"
+              >
+                <router-link
+                  :to="{ name: 'app.home', hash: '#main' }"
+                  class="flex items-center space-x-3"
+                  @click="closeMobileMenu"
+                >
                   <img src="@/assets/logo.png" class="h-8" alt="Logo" />
                 </router-link>
                 <button
@@ -215,8 +336,19 @@
                   class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                   @click="closeMobileMenu"
                 >
-                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               </div>
@@ -229,7 +361,7 @@
                       class="block px-3 py-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       @click="closeMobileMenu"
                     >
-                      {{$t('navbar.links.home')}}
+                      {{ $t("navbar.links.home") }}
                     </router-link>
                   </li>
                   <li>
@@ -238,7 +370,7 @@
                       class="block px-3 py-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       @click="closeMobileMenu"
                     >
-                      {{$t('navbar.links.about')}}
+                      {{ $t("navbar.links.about") }}
                     </router-link>
                   </li>
 
@@ -248,9 +380,23 @@
                       class="w-full flex items-center justify-between px-3 py-2 rounded-md text-left text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       @click="mobileOpen.products = !mobileOpen.products"
                     >
-                      <span>{{$t('navbar.links.products')}}</span>
-                      <svg :class="['w-4 h-4 transition-transform', mobileOpen.products ? 'rotate-180' : 'rotate-0']" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      <span>{{ $t("navbar.links.products") }}</span>
+                      <svg
+                        :class="[
+                          'w-4 h-4 transition-transform',
+                          mobileOpen.products ? 'rotate-180' : 'rotate-0',
+                        ]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     <transition name="accordion">
@@ -262,22 +408,69 @@
                               class="w-full flex items-center justify-between px-3 py-2 rounded-md text-left text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                               @click="mobileOpen.implants = !mobileOpen.implants"
                             >
-                              <span>{{$t('navbar.products.implants.title')}}</span>
-                              <svg :class="['w-4 h-4 transition-transform', mobileOpen.implants ? 'rotate-180' : 'rotate-0']" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              <span>{{ $t("navbar.products.implants.title") }}</span>
+                              <svg
+                                :class="[
+                                  'w-4 h-4 transition-transform',
+                                  mobileOpen.implants ? 'rotate-180' : 'rotate-0',
+                                ]"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M19 9l-7 7-7-7"
+                                />
                               </svg>
                             </button>
                             <transition name="accordion">
                               <div v-show="mobileOpen.implants" class="pl-4">
                                 <ul class="space-y-1 text-sm">
                                   <li>
-                                    <router-link :to="{ name: 'app.products' }" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">
-                                      {{$t('navbar.products.implants.items.uni-implants')}}
+                                    <router-link
+                                      :to="{ name: 'app.products' }"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                    >
+                                      {{
+                                        $t("navbar.products.implants.items.uni-implants")
+                                      }}
                                     </router-link>
                                   </li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.implants.items.uniconic')}}</a></li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.implants.items.uniplus')}}</a></li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.implants.items.unipiece')}}</a></li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.implants.items.uniconic")
+                                      }}</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.implants.items.uniplus")
+                                      }}</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.implants.items.unipiece")
+                                      }}</a
+                                    >
+                                  </li>
                                 </ul>
                               </div>
                             </transition>
@@ -289,17 +482,58 @@
                               class="w-full flex items-center justify-between px-3 py-2 rounded-md text-left text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                               @click="mobileOpen.prosthetic = !mobileOpen.prosthetic"
                             >
-                              <span>{{$t('navbar.products.prosthetic.title')}}</span>
-                              <svg :class="['w-4 h-4 transition-transform', mobileOpen.prosthetic ? 'rotate-180' : 'rotate-0']" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              <span>{{ $t("navbar.products.prosthetic.title") }}</span>
+                              <svg
+                                :class="[
+                                  'w-4 h-4 transition-transform',
+                                  mobileOpen.prosthetic ? 'rotate-180' : 'rotate-0',
+                                ]"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M19 9l-7 7-7-7"
+                                />
                               </svg>
                             </button>
                             <transition name="accordion">
                               <div v-show="mobileOpen.prosthetic" class="pl-4">
                                 <ul class="space-y-1 text-sm">
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.prosthetic.items.cementable')}}</a></li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.prosthetic.items.overdenture')}}</a></li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.prosthetic.items.multiunit')}}</a></li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.prosthetic.items.cementable")
+                                      }}</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.prosthetic.items.overdenture")
+                                      }}</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t("navbar.products.prosthetic.items.multiunit")
+                                      }}</a
+                                    >
+                                  </li>
                                 </ul>
                               </div>
                             </transition>
@@ -311,23 +545,60 @@
                               class="w-full flex items-center justify-between px-3 py-2 rounded-md text-left text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                               @click="mobileOpen.digital = !mobileOpen.digital"
                             >
-                              <span>{{$t('navbar.products.digital.title')}}</span>
-                              <svg :class="['w-4 h-4 transition-transform', mobileOpen.digital ? 'rotate-180' : 'rotate-0']" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              <span>{{ $t("navbar.products.digital.title") }}</span>
+                              <svg
+                                :class="[
+                                  'w-4 h-4 transition-transform',
+                                  mobileOpen.digital ? 'rotate-180' : 'rotate-0',
+                                ]"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M19 9l-7 7-7-7"
+                                />
                               </svg>
                             </button>
                             <transition name="accordion">
                               <div v-show="mobileOpen.digital" class="pl-4">
                                 <ul class="space-y-1 text-sm">
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.digital.items.tibase')}}</a></li>
-                                  <li><a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.products.digital.items.multiunit_tibase')}}</a></li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{ $t("navbar.products.digital.items.tibase") }}</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                      >{{
+                                        $t(
+                                          "navbar.products.digital.items.multiunit_tibase"
+                                        )
+                                      }}</a
+                                    >
+                                  </li>
                                 </ul>
                               </div>
                             </transition>
                           </li>
 
                           <li>
-                            <a href="#" class="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700" @click="closeMobileMenu">{{$t('navbar.links.kits')}}</a>
+                            <a
+                              href="#"
+                              class="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                              @click="closeMobileMenu"
+                              >{{ $t("navbar.links.kits") }}</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -340,7 +611,7 @@
                       class="block px-3 py-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       @click="closeMobileMenu"
                     >
-                      {{$t('navbar.links.downloads')}}
+                      {{ $t("navbar.links.downloads") }}
                     </router-link>
                   </li>
                   <li>
@@ -349,7 +620,7 @@
                       class="block px-3 py-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                       @click="closeMobileMenu"
                     >
-                      {{$t('navbar.links.contact')}}
+                      {{ $t("navbar.links.contact") }}
                     </router-link>
                   </li>
                 </ul>
@@ -364,7 +635,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import { useI18n } from 'vue-i18n';
+import { useI18n } from "vue-i18n";
 
 const isScrolled = ref(false);
 const { locale } = useI18n();
@@ -403,12 +674,32 @@ onUnmounted(() => {
   /* padding: 5px; */
 }
 
-.fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
-.fade-enter-from, .fade-leave-to { opacity: 0; }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
-.slide-enter-active, .slide-leave-active { transition: transform 0.25s ease; }
-.slide-enter-from, .slide-leave-to { transform: translateX(-100%); }
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.25s ease;
+}
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-100%);
+}
 
-.accordion-enter-active, .accordion-leave-active { transition: height 0.2s ease, opacity 0.2s ease; overflow: hidden; }
-.accordion-enter-from, .accordion-leave-to { height: 0; opacity: 0; }
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: height 0.2s ease, opacity 0.2s ease;
+  overflow: hidden;
+}
+.accordion-enter-from,
+.accordion-leave-to {
+  height: 0;
+  opacity: 0;
+}
 </style>

@@ -6,14 +6,16 @@ import UsefulInformationMainPage from '../components/MainPage/UsefulInformationM
 </script>
 <template>
     <div>
-   <section id="main" class="relative flex items-center md:items-center py-20 md:py-40 justify-center w-full min-h-[70vh] md:h-[100vh] bg-[url(@/assets/homePageHeroBG.png)] bg-cover bg-center bg-no-repeat text-white">
+   <section id="main" class="relative flex items-center md:items-center py-20 md:py-40 justify-center w-full 
+   min-h-[100vh] bg-gradient-to-b from-[#d8d8d8] via-[#bfbfbf] to-[#8f8f8f]
+   md:h-[100vh] md:bg-[url(@/assets/homePageHeroBG.png)] md:bg-cover md:bg-center md:bg-no-repeat text-white">
       <div class="container mx-auto px-6 md:px-28 text-start">
         <h2 class="text-3xl font-semibold text-black py-2">{{ $t('homePage.heroSection.title') }}</h2>
         <p class="md:text-6xl text-3xl py-8 font-bold">
-            {{$t('homePage.heroSection.slogan1')}} <br>
-            <span class="block mt-4">{{$t('homePage.heroSection.slogan2')}}</span>
+            {{$t('homePage.heroSection.slogan1')}}
+            <span class="md:block mt-4">{{$t('homePage.heroSection.slogan2')}}</span>
         </p>
-        <p class="text-white my-8">
+        <p class="text-white my-6 md:my-8">
           {{$t('homePage.heroSection.features')}}
         </p>
         <router-link
