@@ -1,4 +1,6 @@
 { 
+  "welcome": "Merhabalar",
+  "hello_user": "Merhaba, {name}!",
   "homePage": {
     "heroSection": {
       "title": "Yüksek Kalite",
@@ -12,14 +14,14 @@
   "contactPage": {
     "left": {
       "title": "İletişim Bilgileri",
-      "addressLine1": "Dudullu OSB Mahallesi İmes 501 Sk. E Blok No:25",
-      "addressLine2": "Ümraniye / İSTANBUL",
+      "addressLine1": "Ostim OSB. Mah. 1271. Cad. No:19",
+      "addressLine2": "Yenimahalle / ANKARA",
       "headOfficeTitle": "Merkez Ofis",
-      "headOfficeCountry": "Suudi Arabistan",
+      "headOfficeCountry": "Türkiye",
       "emailTitle": "Bize E-posta Gönderin",
-      "emailAddress": "Oxciraa@gmail.com",
+      "emailAddress": "info@unimplant.com",
       "phoneTitle": "Bizi Arayın",
-      "phoneNumber": "+966538127976"
+      "phoneNumber": "+905365999262"
     },
     "right": {
       "title": "Bize e-posta gönderin",
@@ -57,6 +59,7 @@
       "implants": {
         "title": "İmplantlar",
         "items": {
+          "uni-implants": "Uni-Implants",
           "uniconic": "Uni-Conic",
           "uniplus": "UNI-Plus",
           "unipiece": "UNI-piece"
@@ -95,9 +98,9 @@
     },
     "contact": {
       "title": "Bize Ulaşın",
-      "location": "Konum: Taiz - Sofitel Turu",
-      "email": "info@janat-abasaten.com",
-      "phone": "+967777953823"
+      "location": "Konum: Ostim OSB. Mah. 1271. Cad. No:19 Yenimahalle/Ankara",
+      "email": "info@unimplant.com",
+      "phone": "+905365999262"
     },
     "copyright": "Uni Implant ©2024 Tüm hakları saklıdır"
   },
@@ -204,6 +207,65 @@
       "videos": "Videolar",
       "pressKit": "Basın Kiti",
       "faq": "SSS"
+    }
+  },
+  "productsPage": {
+    "types": {
+      "implants": {
+        "title": "İmplantlar",
+        "items": [
+          {
+            "key": "uni-conic",
+            "title": "UNI-Conic",
+            "features": ["Kısa İmplantlar", "Kemik Seviyesi İmplant", "mm ince İmplantlar"]
+          },
+          {
+            "key": "uni-plus",
+            "title": "UNI-Plus",
+            "features": ["Standart İmplantlar", "Kemik Seviyesi İmplant", "Normal İmplantlar"]
+          },
+          {
+            "key": "uni-piece",
+            "title": "UNI-Piece",
+            "features": ["Premium İmplantlar", "Kemik Seviyesi İmplant", "Yüksek Kalite İmplantlar"]
+          }
+        ]
+      },
+      "prosthetic": {
+        "title": "Protetik",
+        "items": [
+          {
+            "key": "cementable",
+            "title": "Simante Çözümler",
+            "features": ["Kısa İmplantlar", "Kemik Seviyesi İmplant", "mm ince İmplantlar"]
+          },
+          {
+            "key": "overdenture",
+            "title": "Overdenture Çözümleri",
+            "features": ["Standart İmplantlar", "Kemik Seviyesi İmplant", "Normal İmplantlar"]
+          },
+          {
+            "key": "multiunit",
+            "title": "Multi-Unit Çözümleri",
+            "features": ["Premium İmplantlar", "Kemik Seviyesi İmplant", "Yüksek Kalite İmplantlar"]
+          }
+        ]
+      },
+      "digital": {
+        "title": "Dijital Çözümler",
+        "items": [
+          {
+            "key": "tibase",
+            "title": "Ti-Base Abutment",
+            "features": ["Kısa İmplantlar", "Kemik Seviyesi İmplant", "mm ince İmplantlar"]
+          },
+          {
+            "key": "multiunit_tibase",
+            "title": "Multi-Unit Ti-Base",
+            "features": ["Standart İmplantlar", "Kemik Seviyesi İmplant", "Normal İmplantlar"]
+          }
+        ]
+      }
     }
   }
 }

@@ -144,7 +144,7 @@
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                       <li>
                         <router-link
-                          :to="{ name: 'app.products' }"
+                          :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
                           >{{
                             $t("navbar.products.implants.items.uni-implants")
@@ -152,25 +152,22 @@
                         >
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.implants.items.uniconic") }}</a
-                        >
+                          >{{ $t("navbar.products.implants.items.uniconic") }}</router-link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.implants.items.uniplus") }}</a
-                        >
+                          >{{ $t("navbar.products.implants.items.uniplus") }}</router-link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.implants.items.unipiece") }}</a
-                        >
+                          >{{ $t("navbar.products.implants.items.unipiece") }}</router-link>
                       </li>
                     </ul>
                   </div>
@@ -207,25 +204,28 @@
                   >
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.prosthetic.items.cementable") }}</a
-                        >
+                          >{{ $t("navbar.products.prosthetic.items.uni-prosthetic") }}</router-link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.prosthetic.items.overdenture") }}</a
-                        >
+                          >{{ $t("navbar.products.prosthetic.items.cementable") }}</router-link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.prosthetic.items.multiunit") }}</a
-                        >
+                          >{{ $t("navbar.products.prosthetic.items.overdenture") }}</router-link>
+                      </li>
+                      <li>
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.prosthetic.items.multiunit") }}</router-link>
                       </li>
                     </ul>
                   </div>
@@ -262,18 +262,22 @@
                   >
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'digital' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.digital.items.tibase") }}</a
-                        >
+                          >{{ $t("navbar.products.digital.items.uni-digital-solutions") }}</router-link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'tibase' } }"
                           class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                          >{{ $t("navbar.products.digital.items.multiunit_tibase") }}</a
-                        >
+                          >{{ $t("navbar.products.digital.items.tibase") }}</router-link>
+                      </li>
+                      <li>
+                        <router-link
+                          :to="{ name: 'app.products.type', params: { typeName: 'multiunit_tibase' } }"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
+                          >{{ $t("navbar.products.digital.items.multiunit_tibase") }}</router-link>
                       </li>
                     </ul>
                   </div>
@@ -281,11 +285,10 @@
 
                 <!-- Kits -->
                 <li>
-                  <a
-                    href="#"
+                  <router-link
+                    :to="{ name: 'app.products.type', params: { typeName: 'kits' } }"
                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                    >{{ $t("navbar.links.kits") }}</a
-                  >
+                    >{{ $t("navbar.links.kits") }}</router-link>
                 </li>
               </ul>
             </div>
@@ -432,7 +435,7 @@
                                 <ul class="space-y-1 text-sm">
                                   <li>
                                     <router-link
-                                      :to="{ name: 'app.products' }"
+                                      :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
                                     >
@@ -442,34 +445,31 @@
                                     </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.implants.items.uniconic")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.implants.items.uniconic") }}
+                                    </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.implants.items.uniplus")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.implants.items.uniplus") }}
+                                    </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'implants' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.implants.items.unipiece")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.implants.items.unipiece") }}
+                                    </router-link>
                                   </li>
                                 </ul>
                               </div>
@@ -505,34 +505,31 @@
                               <div v-show="mobileOpen.prosthetic" class="pl-4">
                                 <ul class="space-y-1 text-sm">
                                   <li>
-                                    <a
-                                      href="#"
-                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover-bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.prosthetic.items.cementable")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.prosthetic.items.cementable") }}
+                                    </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.prosthetic.items.overdenture")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.prosthetic.items.overdenture") }}
+                                    </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t("navbar.products.prosthetic.items.multiunit")
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.prosthetic.items.multiunit") }}
+                                    </router-link>
                                   </li>
                                 </ul>
                               </div>
@@ -568,24 +565,22 @@
                               <div v-show="mobileOpen.digital" class="pl-4">
                                 <ul class="space-y-1 text-sm">
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'digital' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{ $t("navbar.products.digital.items.tibase") }}</a
                                     >
+                                      {{ $t("navbar.products.digital.items.tibase") }}
+                                    </router-link>
                                   </li>
                                   <li>
-                                    <a
-                                      href="#"
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'digital' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                                       @click="closeMobileMenu"
-                                      >{{
-                                        $t(
-                                          "navbar.products.digital.items.multiunit_tibase"
-                                        )
-                                      }}</a
                                     >
+                                      {{ $t("navbar.products.digital.items.multiunit_tibase") }}
+                                    </router-link>
                                   </li>
                                 </ul>
                               </div>
@@ -593,12 +588,13 @@
                           </li>
 
                           <li>
-                            <a
-                              href="#"
+                            <router-link
+                              :to="{ name: 'app.products.type', params: { typeName: 'kits' } }"
                               class="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                               @click="closeMobileMenu"
-                              >{{ $t("navbar.links.kits") }}</a
                             >
+                              {{ $t("navbar.links.kits") }}
+                            </router-link>
                           </li>
                         </ul>
                       </div>

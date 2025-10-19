@@ -13,14 +13,14 @@
     "contactPage": {
         "left": {
             "title": "Contact Information",
-            "addressLine1": "Dudullu OSB Mahallesi İmes 501 Sk. E Blok No:25",
-            "addressLine2": "Ümraniye / İSTANBUL",
+            "addressLine1": "Ostim OSB. Mah. 1271. Cad. No:19",
+            "addressLine2": "Yenimahalle / ANKARA",
             "headOfficeTitle": "Head Office",
-            "headOfficeCountry": "Saudi Arabia",
+            "headOfficeCountry": "Turkey",
             "emailTitle": "Email Us",
-            "emailAddress": "Oxciraa@gmail.com",
+            "emailAddress": "info@unimplant.com",
             "phoneTitle": "Call Us",
-            "phoneNumber": "+966538127976"
+            "phoneNumber": "+905365999262"
         },
         "right": {
             "title": "Send us an e-mail",
@@ -67,6 +67,7 @@
             "prosthetic": {
                 "title": "Prosthetic",
                 "items": {
+                    "uni-prosthetic": "Uni-Prosthetics",
                     "cementable": "Cementable Solutions",
                     "overdenture": "Overdenture Solutions",
                     "multiunit": "Multi-Unit Solutions"
@@ -75,6 +76,7 @@
             "digital": {
                 "title": "Digital Solutions",
                 "items": {
+                    "uni-digital-solutions": "Uni-Digital Solutions",
                     "tibase": "Ti-Base Abutment",
                     "multiunit_tibase": "Multi-Unit Ti-Base"
                 }
@@ -97,9 +99,9 @@
         },
         "contact": {
             "title": "Contact Us",
-            "location": "Location: Taiz - Sofitel Tour",
-            "email": "info@janat-abasaten.com",
-            "phone": "+967777953823"
+            "location": "Location: Ostim OSB. Mah. 1271. Cad. No:19 Yenimahalle-Ankara",
+            "email": "info@unimplant.com",
+            "phone": "+905365999262"
         },
         "copyright": "Uni Implant ©2024 All rights reserved"
     },
@@ -206,6 +208,65 @@
             "videos": "Videos",
             "pressKit": "Press Kit",
             "faq": "FAQ"
+        }
+    },
+    "productsPage": {
+        "types": {
+            "implants": {
+                "title": "Implants",
+                "items": [
+                    {
+                        "key": "uni-conic",
+                        "title": "UNI-Conic",
+                        "features": ["Short Implants", "Bone Level Implant", "mm slim Implants"]
+                    },
+                    {
+                        "key": "uni-plus",
+                        "title": "UNI-Plus",
+                        "features": ["Standard Implants", "Bone Level Implant", "Regular Implants"]
+                    },
+                    {
+                        "key": "uni-piece",
+                        "title": "UNI-Piece",
+                        "features": ["Premium Implants", "Bone Level Implant", "High Quality Implants"]
+                    }
+                ]
+            },
+            "prosthetic": {
+                "title": "Prosthetic",
+                "items": [
+                    {
+                        "key": "cementable",
+                        "title": "Cementable Solutions",
+                        "features": ["Short Implants", "Bone Level Implant", "mm slim Implants"]
+                    },
+                    {
+                        "key": "overdenture",
+                        "title": "Overdenture Solutions",
+                        "features": ["Standard Implants", "Bone Level Implant", "Regular Implants"]
+                    },
+                    {
+                        "key": "multiunit",
+                        "title": "Multi-Unit Solutions",
+                        "features": ["Premium Implants", "Bone Level Implant", "High Quality Implants"]
+                    }
+                ]
+            },
+            "digital": {
+                "title": "Digital Solutions",
+                "items": [
+                    {
+                        "key": "tibase",
+                        "title": "Ti-base Abutment",
+                        "features": ["Short Implants", "Bone Level Implant", "mm slim Implants"]
+                    },
+                    {
+                        "key": "multiunit_tibase",
+                        "title": "Multi-Unit Ti-base",
+                        "features": ["Standard Implants", "Bone Level Implant", "Regular Implants"]
+                    }
+                ]
+            }
         }
     }
 }

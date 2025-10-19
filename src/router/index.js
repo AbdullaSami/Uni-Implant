@@ -6,6 +6,7 @@ import About from '../views/About.vue'
 import ContactUs from '../views/ContactUs.vue'
 import Products from '../views/Products.vue'
 import Download from '../views/Download.vue'
+import Product from '../views/Product.vue'
 
 
 const routes = [
@@ -34,6 +35,11 @@ const routes = [
                 path: '/products',
                 name: 'app.products',
                 component: Products,
+            },
+            {
+                path: '/products/:typeName',
+                name: 'app.products.type',
+                component: Product,
             },
             {
                 path: '/download',

@@ -22,7 +22,7 @@ import ContactForm from "@/components/ContactForm.vue";
     <div>
       <iframe
         title="map"
-        src="https://www.google.com/maps?q=30.0444,31.2357&z=12&output=embed"
+        src="https://www.google.com/maps?q=39.97632343910415,32.750476690348655&z=12&output=embed"
         width="100%"
         height="100%"
         class="min-h-[280px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] w-[92%] sm:w-[90%] mx-auto block border-0 my-10 md:my-16 rounded-2xl sm:rounded-3xl"
