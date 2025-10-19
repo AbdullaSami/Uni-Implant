@@ -507,6 +507,15 @@
                                   <li>
                                     <router-link
                                       :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                    >
+                                      {{ $t("navbar.products.prosthetic.items.uni-prosthetic") }}
+                                    </router-link>
+                                  </li>
+                                  <li>
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'prosthetic' } }"
                                       class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover-bg-gray-700"
                                       @click="closeMobileMenu"
                                     >
@@ -564,6 +573,15 @@
                             <transition name="accordion">
                               <div v-show="mobileOpen.digital" class="pl-4">
                                 <ul class="space-y-1 text-sm">
+                                  <li>
+                                    <router-link
+                                      :to="{ name: 'app.products.type', params: { typeName: 'digital' } }"
+                                      class="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                                      @click="closeMobileMenu"
+                                    >
+                                      {{ $t("navbar.products.digital.items.uni-digital-solutions") }}
+                                    </router-link>
+                                  </li>
                                   <li>
                                     <router-link
                                       :to="{ name: 'app.products.type', params: { typeName: 'digital' } }"
